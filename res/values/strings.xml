@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">TasawrMaps</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_fb_login">FbLoginActivity</string>
+    <string name="login_title">To access this application you need to login with Facebook.</string>
+    <string name="fb_login">Login With FaceBook</string>
+    <string name="fb_logout">Logout</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+</resources>
