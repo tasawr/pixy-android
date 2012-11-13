@@ -76,7 +76,7 @@ public class FbLoginActivity extends Activity{
     
     public static void myProfile(JSONObject me) throws JSONException{
     	//userName.setText(me.getString("name"));
-    	Intent chatIntent = new Intent(fb,ChatActivity.class);
+    	Intent chatIntent = new Intent(fb,com.tasawr.pixi.activities.MapMainActivity.class);
     	fb.startActivity(chatIntent);
     	Log.i("Me", me.toString());
     }

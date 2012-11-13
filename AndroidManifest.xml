@@ -5,12 +5,16 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="10" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
         <activity
             android:name=".FbLoginActivity"
             android:label="@string/title_activity_fb_login" >
@@ -23,7 +27,14 @@
         <activity
             android:name=".ChatActivity"
             android:label="@string/title_activity_chat" >
-            
+        </activity>
+        <activity
+            android:name=".activities.MapMainActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activities.SelectImageActivity"
+            android:theme="@style/pixy_theme" >
         </activity>
     </application>
 

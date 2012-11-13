@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_category">
+        <item>All</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Business</item>
+        <item>Education</item>
+        <item>Games</item>
+        <item>Health &amp; Fitness</item>
+        <item>Lifestyle</item>
+        <item>Medical</item>
+        <item>Finnance</item>
+        <item>Home</item>
+    </string-array>
+</resources>

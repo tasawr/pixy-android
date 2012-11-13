@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="pixy_theme" parent="android:Theme">
+        <item name="android:windowTitleSize">40dip</item>       
+    </style>
+
+</resources>

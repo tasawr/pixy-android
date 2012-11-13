@@ -8,5 +8,9 @@
     <string name="fb_login">Login With FaceBook</string>
     <string name="fb_logout">Logout</string>
     <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_select_image">Select From Gallery</string>
+    <string name="title_take_photo">Take a photo</string>
+    <string name="title_select_from_gallery">Select from gallery</string>
+    <string name="title_cancel">Cancel</string>
 
 </resources>
