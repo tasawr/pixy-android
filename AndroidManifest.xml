@@ -24,10 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ChatActivity"
-            android:label="@string/title_activity_chat" >
-        </activity>
+       
         <activity
             android:name=".activities.MapMainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
