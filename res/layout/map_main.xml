@@ -64,7 +64,7 @@
                 android:id="@+id/mapView_main"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:apiKey="0UM1Mr77bH51hMP5tr9moruACZCpYytgPCdrIFg"
+                android:apiKey="0H2VoM9tz2I8wWgPZkCM1WxfjBWortGBKVAoZwA"
                 android:clickable="true" />
 			<Button
                 android:id="@+id/btnSearch"
