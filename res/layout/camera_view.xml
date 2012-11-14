@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framePreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <com.tasawr.pixi.camera.CameraView
+            android:id="@+id/cameraView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Snap" />
+
+        <Button
+            android:id="@+id/buttonRetake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Retake" />
+
+        <Button
+            android:id="@+id/buttonUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:text="Use" />
+    </RelativeLayout>
+
+</LinearLayout>
