@@ -78,7 +78,7 @@ public class FbLoginActivity extends Activity{
     	//userName.setText(me.getString("name"));
     	Intent chatIntent = new Intent(fb,com.tasawr.pixi.activities.MapMainActivity.class);
     	fb.startActivity(chatIntent);
-    	Log.i("Me", me.toString());
+    	Log.i("Me erro", me.toString());
     }
     
     View.OnClickListener fbLoginHandaler = new View.OnClickListener() {

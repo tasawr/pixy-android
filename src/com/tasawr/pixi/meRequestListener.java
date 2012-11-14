@@ -7,6 +7,8 @@ import java.net.MalformedURLException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 import com.facebook.android.AsyncFacebookRunner.RequestListener;
 import com.facebook.android.FacebookError;
 
@@ -22,6 +24,8 @@ public class meRequestListener implements RequestListener {
 			FbLoginActivity.myProfile(jo);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
+			
+			Log.i("Eroorr", "erorr");
 			e.printStackTrace();
 		}
 		 

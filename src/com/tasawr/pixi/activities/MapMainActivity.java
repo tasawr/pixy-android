@@ -2,20 +2,15 @@ package com.tasawr.pixi.activities;
 
 
 
-import com.google.android.maps.MapActivity;
-import com.google.android.maps.MapController;
-import com.google.android.maps.MapView;
-import com.tasawr.pixi.R;
-
-
+import org.json.JSONException;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -24,6 +19,12 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.maps.MapActivity;
+import com.google.android.maps.MapController;
+import com.google.android.maps.MapView;
+import com.tasawr.pixi.R;
+import com.tasawr.pixi.WebService;
 
 public class MapMainActivity extends MapActivity implements OnClickListener,OnItemClickListener
 {
@@ -40,7 +41,13 @@ public class MapMainActivity extends MapActivity implements OnClickListener,OnIt
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.map_main);
-		
+		try {
+			WebService ws = new WebService();
+			ws.place();
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		viewCategoryLayout = (LinearLayout) findViewById(R.id.ltCategories);
 		btnCategory = (Button) findViewById(R.id.btnShowCategory);
 		btnInfo = (Button) findViewById(R.id.btnShowInfo);
